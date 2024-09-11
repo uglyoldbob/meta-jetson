@@ -3,6 +3,7 @@ From: "Miguel A. Vico" <mvicomoya@nvidia.com>
 Date: Thu, 18 May 2017 14:35:36 -0700
 Subject: [PATCH] compositor: Process stream attach requests with
  wl_eglstream_controller
+Upstream-Status: Pending
 
 So far, the EGLStream implementation of the Wayland client-side driver
 has been using wl_surface_attach + commit in order to make the server

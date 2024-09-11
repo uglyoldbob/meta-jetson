@@ -12,25 +12,25 @@ COMPATIBLE_MACHINE = "(tegra)"
 
 TNSPEC_BOOTDEV ??= "mmcblk0p1"
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 
 do_install() {
-    install -m 0755 ${WORKDIR}/init-boot.sh ${D}/init
+    install -m 0755 ${WORKDIR}/sources-unpack/init-boot.sh ${D}/init
     install -m 0555 -d ${D}/proc ${D}/sys
     install -m 0755 -d ${D}/dev ${D}/mnt ${D}/run ${D}/usr
     install -m 1777 -d ${D}/tmp
     mknod -m 622 ${D}/dev/console c 5 1
     install -d ${D}${sysconfdir}
-    if [ -e ${WORKDIR}/platform-preboot-cboot.sh ]; then
-        cat ${WORKDIR}/platform-preboot-cboot.sh ${WORKDIR}/platform-preboot.sh > ${WORKDIR}/platform-preboot.tmp
-        install -m 0644 ${WORKDIR}/platform-preboot.tmp ${D}${sysconfdir}/platform-preboot
-        rm ${WORKDIR}/platform-preboot.tmp
+    if [ -e ${WORKDIR}/sources-unpack/platform-preboot-cboot.sh ]; then
+        cat ${WORKDIR}/sources-unpack/platform-preboot-cboot.sh ${WORKDIR}/sources-unpack/platform-preboot.sh > ${WORKDIR}/sources-unpack/platform-preboot.tmp
+        install -m 0644 ${WORKDIR}/sources-unpack/platform-preboot.tmp ${D}${sysconfdir}/platform-preboot
+        rm ${WORKDIR}/sources-unpack/platform-preboot.tmp
     else
-	install -m 0644 ${WORKDIR}/platform-preboot.sh ${D}${sysconfdir}/platform-preboot
+	install -m 0644 ${WORKDIR}/sources-unpack/platform-preboot.sh ${D}${sysconfdir}/platform-preboot
     fi
     sed -i -e"s,@TNSPEC_BOOTDEV@,${TNSPEC_BOOTDEV},g" ${D}${sysconfdir}/platform-preboot
-    if [ -e ${WORKDIR}/platform-mount-boot-part.sh ]; then
-        install -m 0644 ${WORKDIR}/platform-mount-boot-part.sh ${D}${sysconfdir}/platform-mount-boot-part
+    if [ -e ${WORKDIR}/sources-unpack/platform-mount-boot-part.sh ]; then
+        install -m 0644 ${WORKDIR}/sources-unpack/platform-mount-boot-part.sh ${D}${sysconfdir}/platform-mount-boot-part
     fi
 }
 

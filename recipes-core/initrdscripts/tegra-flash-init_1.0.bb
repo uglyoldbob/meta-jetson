@@ -10,7 +10,7 @@ SRC_URI = "\
 
 COMPATIBLE_MACHINE = "(tegra)"
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 
 do_install() {
     install -m 0755 ${WORKDIR}/init-flash.sh ${D}/init

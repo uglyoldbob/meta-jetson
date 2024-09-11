@@ -2,6 +2,7 @@ From 8eec4e961f1e36bedcb057bf76f9c1febb6524cb Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Mon, 14 Feb 2022 08:38:55 -0800
 Subject: [PATCH] Drop DRM version check in meson.build
+Upstream-Status: Pending
 
 The NVIDIA libdrm that we drop in at runtime doesn't
 support the feature that weston is looking for, but

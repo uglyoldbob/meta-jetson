@@ -2,6 +2,7 @@ From eee62b47ad52c4fbe552ae4ec92e473998ceb7f7 Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Mon, 3 May 2021 07:20:13 -0700
 Subject: [PATCH] Fix missing t186 boot partitions in l4t_bup_gen.func
+Upstream-Status: Pending
 
 Signed-off-by: Matt Madison <matt@madison.systems>
 

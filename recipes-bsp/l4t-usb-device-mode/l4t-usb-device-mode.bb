@@ -15,7 +15,7 @@ inherit features_check
 
 REQUIRED_DISTRO_FEATURES = "systemd"
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 
 do_configure[noexec] = "1"
 do_compile[noexec] = "1"

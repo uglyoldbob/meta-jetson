@@ -10,7 +10,7 @@ SRC_URI = "\
 INHIBIT_DEFAULT_DEPS = "1"
 COMPATIBLE_MACHINE = "(tegra)"
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d

@@ -6,7 +6,7 @@ SRC_URI = "file://flashvars"
 
 COMPATIBLE_MACHINE = "(tegra)"
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 
 INHIBIT_DEFAULT_DEPS = "1"
 

@@ -10,13 +10,13 @@ SRC_URI = "\
 INHIBIT_DEFAULT_DEPS = "1"
 COMPATIBLE_MACHINE = "(tegra)"
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d
-    install -m 0755 ${S}/nvpmodel.init ${D}${sysconfdir}/init.d/nvpmodel
+    install -m 0755 ${WORKDIR}/sources-unpack/nvpmodel.init ${D}${sysconfdir}/init.d/nvpmodel
     install -d ${D}${systemd_system_unitdir}
-    install -m 0644 ${S}/nvpmodel.service ${D}${systemd_system_unitdir}
+    install -m 0644 ${WORKDIR}/sources-unpack/nvpmodel.service ${D}${systemd_system_unitdir}
 }
 
 inherit systemd update-rc.d

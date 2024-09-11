@@ -2,6 +2,7 @@ From 8bd40bb4fb50e868f2c10aeffe28580adb49827a Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Tue, 16 Nov 2021 09:11:46 -0800
 Subject: [PATCH] Patch nv.sh script for OE use
+Upstream-Status: Pending
 
 Signed-off-by: Matt Madison <matt@madison.systems>
 ---

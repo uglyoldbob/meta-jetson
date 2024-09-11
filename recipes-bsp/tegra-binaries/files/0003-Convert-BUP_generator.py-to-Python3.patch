@@ -2,6 +2,7 @@ From 35ff09d78c84a8a94eaeb1d791ee6f67067afe0c Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Wed, 22 Jan 2020 05:53:04 -0800
 Subject: [PATCH] Convert BUP_generator.py to Python3
+Upstream-Status: Pending
 
 %% original patch: 0003-Convert-BUP_generator.py-to-Python3.patch
 

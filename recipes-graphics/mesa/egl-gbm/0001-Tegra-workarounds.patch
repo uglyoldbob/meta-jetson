@@ -2,6 +2,7 @@ From 3c7e0dac3f414afeef9893e087af5bcb208d0e3a Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Thu, 10 Feb 2022 11:52:55 -0800
 Subject: [PATCH] Tegra workarounds
+Upstream-Status: Pending
 
 ---
  src/gbm-display.c | 1 -

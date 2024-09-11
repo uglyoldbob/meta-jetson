@@ -16,7 +16,7 @@ USERDEVNAME = "${@'sdcard' if d.getVar('TEGRA_SPIFLASH_BOOT') == '1' else 'sdmmc
 
 inherit image_types_tegra
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 B = "${WORKDIR}/build"
 
 do_configure() {

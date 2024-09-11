@@ -10,12 +10,12 @@ SRC_URI = "\
 INHIBIT_DEFAULT_DEPS = "1"
 COMPATIBLE_MACHINE = "(tegra)"
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 
 do_install() {
     install -d ${D}${systemd_system_unitdir} ${D}${sysconfdir}/init.d
-    install -m 0644 ${S}/nvphs.service ${D}${systemd_system_unitdir}
-    install -m 0755 ${S}/nvphs.init ${D}${sysconfdir}/init.d/nvphs
+    install -m 0644 ${WORKDIR}/sources-unpack/nvphs.service ${D}${systemd_system_unitdir}
+    install -m 0755 ${WORKDIR}/sources-unpack/nvphs.init ${D}${sysconfdir}/init.d/nvphs
     sed -i -e's,/usr/sbin,${sbindir},g' ${D}${systemd_system_unitdir}/nvphs.service
 }
 

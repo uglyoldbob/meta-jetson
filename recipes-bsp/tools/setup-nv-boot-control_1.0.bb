@@ -14,7 +14,7 @@ COMPATIBLE_MACHINE = "(tegra)"
 TNSPEC_TARGET ?= "${MACHINE}"
 TNSPEC_BOOTDEV ?= "mmcblk0p1"
 
-S = "${WORKDIR}"
+S = "${WORKDIR}/source"
 B = "${WORKDIR}/build"
 
 inherit systemd update-rc.d

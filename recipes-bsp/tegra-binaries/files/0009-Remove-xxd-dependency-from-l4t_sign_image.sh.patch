@@ -2,6 +2,7 @@ From 2287cb39236f850acd94ac5fd628c8985e3495c1 Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Mon, 26 Apr 2021 07:52:31 -0700
 Subject: [PATCH] Remove xxd dependency from l4t_sign_image.sh
+Upstream-Status: Pending
 
 since it's not necessarily available in the build environment.
 

@@ -2,6 +2,7 @@ From 68dfc736a707dd7c3373904bc9db2f40018b2f18 Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Sat, 2 Feb 2019 06:59:41 -0800
 Subject: [PATCH] Fix wayland-eglstream-protocols pc file
+Upstream-Status: Pending
 
 ---
  wayland-eglstream-protocols.pc.in | 2 +-

@@ -1,3 +1,4 @@
+Upstream-Status: Pending
 --- Linux_for_Tegra/tools/bmp-splash/BMP_generator_L4T.py.orig	2021-06-02 02:26:34.460334063 +0000
 +++ Linux_for_Tegra/tools/bmp-splash/BMP_generator_L4T.py	2021-06-02 02:54:01.965137867 +0000
 @@ -1,4 +1,4 @@

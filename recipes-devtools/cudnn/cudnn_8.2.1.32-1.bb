@@ -19,9 +19,7 @@ COMPATIBLE_MACHINE = "(tegra)"
 PACKAGE_ARCH = "${TEGRA_PKGARCH}"
 
 def extract_basever(d):
-    ver = d.getVar('PV').split('-')[0]
-    components = ver.split('.')
-    return '%s.%s.%s' % (components[0], components[1], components[2])
+    return '8.2.1'
 
 def extract_majver(d):
     ver = d.getVar('PV').split('-')[0]

@@ -2,6 +2,7 @@ From 314fd6130891521cebc97e4d65790ed691cfc97e Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Tue, 27 Apr 2021 05:36:52 -0700
 Subject: [PATCH] Rework logging in l4t_sign_image.sh
+Upstream-Status: Pending
 
 to be more compatible with the pseudo environment during
 builds, which wasn't happy about the output redirection

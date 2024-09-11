@@ -2,6 +2,7 @@ From 5f67e64cafbc1875c2427756a097cfe34b1a1220 Mon Sep 17 00:00:00 2001
 From: Matt Madison <matt@madison.systems>
 Date: Sat, 30 Jan 2021 09:00:13 -0800
 Subject: [PATCH] Skip qspi-sd-specific entries for other t210 BUP payloads
+Upstream-Status: Pending
 
 With the 32.5.0 version of the script, we now get
 errors when the entries specific to the P3448
