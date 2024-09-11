@@ -14,8 +14,8 @@ S = "${WORKDIR}/source"
 
 do_install() {
     install -d ${D}${systemd_system_unitdir} ${D}${sysconfdir}/init.d
-    install -m 0644 ${WORKDIR}/sources-unpack/nvs-service.service ${D}${systemd_system_unitdir}
-    install -m 0755 ${WORKDIR}/sources-unpack/nvs-service.init ${D}${sysconfdir}/init.d/nvs-service
+    install -m 0644 ${UNPACKDIR}/nvs-service.service ${D}${systemd_system_unitdir}
+    install -m 0755 ${UNPACKDIR}/nvs-service.init ${D}${sysconfdir}/init.d/nvs-service
     sed -i -e's,/usr/sbin,${sbindir},g' ${D}${systemd_system_unitdir}/nvs-service.service
 }
 

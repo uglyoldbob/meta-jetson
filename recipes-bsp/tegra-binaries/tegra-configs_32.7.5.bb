@@ -35,7 +35,7 @@ do_install() {
     install -m 0644 ${S}/etc/udev/rules.d/99-nv-l4t-usb-host-config.rules ${D}${sysconfdir}/udev/rules.d
 
     install -d ${D}/opt/nvidia/l4t-bootloader-config
-    install -m 0755 ${WORKDIR}/sources-unpack/nv-l4t-bootloader-config.sh ${D}/opt/nvidia/l4t-bootloader-config/nv-l4t-bootloader-config.sh
+    install -m 0755 ${UNPACKDIR}/nv-l4t-bootloader-config.sh ${D}/opt/nvidia/l4t-bootloader-config/nv-l4t-bootloader-config.sh
 
     install -d ${D}${sysconfdir}/X11
 

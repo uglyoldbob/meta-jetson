@@ -14,8 +14,8 @@ S = "${WORKDIR}/source"
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d ${D}${systemd_system_unitdir}
-    install -m 0755 ${WORKDIR}/sources-unpack/nvstartup.init ${D}${sysconfdir}/init.d/nvstartup
-    install -m 0644 ${WORKDIR}/sources-unpack/nvstartup.service ${D}${systemd_system_unitdir}/
+    install -m 0755 ${UNPACKDIR}/nvstartup.init ${D}${sysconfdir}/init.d/nvstartup
+    install -m 0644 ${UNPACKDIR}/nvstartup.service ${D}${systemd_system_unitdir}/
 }
 
 inherit systemd update-rc.d

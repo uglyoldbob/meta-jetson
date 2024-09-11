@@ -14,8 +14,8 @@ S = "${WORKDIR}/source"
 
 do_install() {
     install -d ${D}${systemd_system_unitdir} ${D}${sysconfdir}/init.d
-    install -m 0644 ${WORKDIR}/sources-unpack/nvphs.service ${D}${systemd_system_unitdir}
-    install -m 0755 ${WORKDIR}/sources-unpack/nvphs.init ${D}${sysconfdir}/init.d/nvphs
+    install -m 0644 ${UNPACKDIR}/nvphs.service ${D}${systemd_system_unitdir}
+    install -m 0755 ${UNPACKDIR}/nvphs.init ${D}${sysconfdir}/init.d/nvphs
     sed -i -e's,/usr/sbin,${sbindir},g' ${D}${systemd_system_unitdir}/nvphs.service
 }
 

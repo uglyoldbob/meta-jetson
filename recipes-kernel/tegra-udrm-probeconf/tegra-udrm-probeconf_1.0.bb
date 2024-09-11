@@ -8,5 +8,5 @@ COMPATIBLE_MACHINE = "(tegra)"
 
 do_install() {
     install -d ${D}${sysconfdir}/modprobe.d
-    install -m 0644 ${WORKDIR}/sources-unpack/tegra-udrm.conf ${D}${sysconfdir}/modprobe.d/
+    install -m 0644 ${UNPACKDIR}/tegra-udrm.conf ${D}${sysconfdir}/modprobe.d/
 }

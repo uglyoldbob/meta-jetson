@@ -14,9 +14,9 @@ S = "${WORKDIR}/source"
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d
-    install -m 0755 ${WORKDIR}/sources-unpack/nvpmodel.init ${D}${sysconfdir}/init.d/nvpmodel
+    install -m 0755 ${UNPACKDIR}/nvpmodel.init ${D}${sysconfdir}/init.d/nvpmodel
     install -d ${D}${systemd_system_unitdir}
-    install -m 0644 ${WORKDIR}/sources-unpack/nvpmodel.service ${D}${systemd_system_unitdir}
+    install -m 0644 ${UNPACKDIR}/nvpmodel.service ${D}${systemd_system_unitdir}
 }
 
 inherit systemd update-rc.d
